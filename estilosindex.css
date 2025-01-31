@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: rgba(245, 245, 226, 0.8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+
+
+
+/*Botones*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:brown;
+    background-color: beige;
+    margin-top: 70px;
+}
+
+
+button:hover{
+    background-color: rgba(186, 186, 163, 0.8);
+}
+
+
+
+/*Cabecera*/
+header{
+    background-color: rgba(38, 38, 4, 0.99);
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: beige;
+    font-size: 1.6em;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    padding-right: 30px;
+    align-items: center;
+}
+
+
+header a{
+    padding: 5px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: beige;
+    padding-right: 50px;
+}
+
+
+header i:hover{
+    border: 1px solid beige;
+    border-radius: 360px;
+    background-color: beige;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+.logo:hover{
+    filter: brightness(50%);
+    text-decoration: none;
+}
+
+
+
+
+/*Primera sección del index*/
+#uno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: whitesmoke;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/uno.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+/*Segunda sección del index*/
+#dos .imagencontenedor{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("imagenes/dos.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 400px;
+}
+
+
+#dos .container{
+    text-align: center;
+    padding: 200px 12px;
+    display: flex;
+    justify-content: center;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+
+#dos .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/*Tercera sección del index*/
+#tres{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.25)
+    ),url("imagenes/madera.png");
+}
+
+
+#tres .container{
+    text-align: center;
+    padding: 100px 10px;
+}
+
+
+#tres .productos{
+    display: flex;
+    justify-content: center;
+}
+
+
+#tres h2{
+   margin-top: 0;
+}
+
+
+#tres .catalogo{
+    width: 250px;
+    height: 300px;
+    padding: 50px;
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 60px;
+    border-radius: 15px;
+    
+}
+
+
+.catalogo:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/menaje.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+
+.catalogo:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/utensilios2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.catalogo:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/cuchillo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*Pie de página*/
+footer{
+    text-transform: capitalize;
+    background-color: rgba(38, 38, 4, 0.99);
+    padding: 30px 0;
+    justify-content: center;
+}
+
+
+footer .container{
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+
+footer .filasfooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer .linksfooter{
+    width: 40%;
+    padding: 0 15px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: beige;
+}
+
+
+footer a:hover{
+    color: black;
+}
+
+
+.linksfooter h4{
+    color: beige;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid beige;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.linksfooter:hover{
+    text-decoration: none;
+}
+
+
+footer li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+footer p{
+    color: beige;
+    margin-bottom: 1px;
+    text-align:center;
+}
+
+
+.redes a{
+    display: inline-flex;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+.dinero{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.metododepago{
+    display: flex;
+    flex-direction: row;
+    filter:brightness(50%);
+    border: 1px solid beige;
+}
+
+
+.cajita i{
+    padding: 5px;
+}
+
+
+
+
+
+
+.menaje h3{
+    color: beige;
+}
+
+
+.botonvolver{
+    padding-left: 75%;
+    padding-bottom: 50px;
+}
+
+
+.volver{
+    background-color: rgba(38, 38, 4, 0.8);
+    color: beige;
+    
+}
+
+
+/*CSS para las diferentes catálogos de productos*/
+#nueva{
+    position: relative;
+}
+
+
+/*Contenedor principal*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+
+
+/*Borde*/
+.item{
+    border-radius: 10px;
+}
+
+
+/*Resaltado hacia arriba*/
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Info del producto*/
+.info-item{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+
+/*ajuste de la imagen de cada producto*/
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit:fill;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+
+/*Cantidad que queremos que la imagen crezca al pasarle el ratón por encima*/
+.item:hover img{
+    transform: scale(1.2);
+}
+
+
+/*Para que la imagen escale pero sin desbordar*/
+.item figure{
+    overflow: hidden;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/*Sección de selección de cuchillos*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+
+
+/*Borde*/
+.item{
+    border-radius: 10px;
+}
+
+
+/*Resaltado hacia arriba*/
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Info del producto*/
+.info-item{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    text-align:justify;
+}
+
+
+/*ajuste de la imagen de cada modelo*/
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+    filter:brightness(50%);
+}
+
+
+/*Cantidad que queremos que la imagen crezca al pasarle el ratón por encima*/
+.item:hover img{
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+
+/*Para que la imagen escale pero sin desbordar*/
+.item figure{
+    overflow: hidden;
+}
+
+/*Ajuste del botón para seleccionar el modelo de cuchillo*/
+.info-item button{
+    width: 100%;
+    background-color: rgba(38, 38, 4, 0.8);
+    color: beige;
+}
+
+.info-item button:hover{
+    background-color: beige;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+
+/*Selección de menaje, utensilios o cuchillos*/
+.contenedormuc{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+
+
+/*Borde*/
+.item{
+    border-radius: 10px;
+}
+
+
+/*Resaltado hacia arriba*/
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Info del producto*/
+.info-item{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    text-align:justify;
+}
+
+
+/*ajuste de la imagen de cada modelo*/
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+    filter:brightness(50%);
+}
+
+
+/*Cantidad que queremos que la imagen crezca al pasarle el ratón por encima*/
+.item:hover img{
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+
+/*Para que la imagen escale pero sin desbordar*/
+.item figure{
+    overflow: hidden;
+}
+
+/*Ajuste del botón para seleccionar el producto*/
+.info-item button{
+    width: 100%;
+    background-color: rgba(38, 38, 4, 0.8);
+    color: beige;
+}
+
+.info-item button:hover{
+    background-color: beige;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+
+/*Contenedor principal para el modelo de cuchillos Brooklyn*/
+.contenedorbrooklyn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    justify-content: center;
+}
+
+
+#conocenos{
+    justify-content: center;
+    width: 450px;
+}
+
+
+
+
+/*Formulario*/
+.registro{
+    width: 700px;
+    background-color: rgba(38, 38, 4, 0.8);
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: beige;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.registro h3{
+    margin-bottom: 30px;
+}
+
+
+.registro p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.informacionpersonal{
+    width: 100%;
+    background-color: beige;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: medium ;
+}
+
+
+.contenedorbotoncito{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.botoncito{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:brown;
+    background-color: beige;
+}
+
+
+.botoncito:hover{
+    background-color: rgba(186, 186, 163, 0.8);
+    color: rgba(38, 38, 4, 0.8);
+}
+
+.registro a{
+    text-align: center;
+    padding: 40%;
+}
+
+
+
+
+/*Página conócenos*/
+.conocenos{
+    text-align: center;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+.conocenos p{
+    width: 100%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 50px 40px;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.imagenconocenos img{
+    border-radius: 10px;
+    filter: brightness(90%);
+}
+
+
+.englobar{
+    padding: 50px;
+}
+
+
+.infocontacto{
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    box-shadow:1px 3px 10px;
+}
+
+
+.servicial{
+    width: 50%;
+    text-align: left;
+    color: rgba(38, 38, 4, 0.8);
+}
+
+
+.servicial h3{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contactocontenedor{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 12,5%;
+    padding: 10px;
+}
+
+
+/*Clase del texto del número de whatsapp, teléfono fijo y correo*/
+.numero{
+    font-size:medium;
+    padding: 10px;
+}
+
+
+i{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
+/*Título que aparece en las diferentes secciones de los productos*/
+
+
+
+#tituloseccion{
+    padding-top: 30px;
+    color: rgba(38, 38, 4, 0.8);
+    text-align: center;
+}
